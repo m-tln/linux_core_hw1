@@ -1,0 +1,33 @@
+BasedOnStyle: LLVM
+IndentWidth: 8
+TabWidth: 8
+UseTab: Always
+BreakBeforeBraces: Linux
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: Never
+AllowShortFunctionsOnASingleLine: None
+PointerAlignment: Right
+AlignEscapedNewlines: Left
+ColumnLimit: 80
+IncludeBlocks: Preserve
+SortIncludes: CaseSensitive
+AccessModifierOffset: -8
+AlwaysBreakAfterReturnType: TopLevelDefinitions
+Checks: >
+  -*,
+  bugprone-*,
+  clang-analyzer-*,
+  misc-*,
+  performance-*,
+  readability-*,
+  -readability-magic-numbers,
+  -readability-identifier-length,
+  -bugprone-reserved-identifier,
+  -misc-non-private-member-variables-in-classes,
+  -readability-implicit-bool-conversion
+WarningsAsErrors: ''
+HeaderFilterRegex: '.*'
+FormatStyle: file
+CheckOptions:
+  readability-braces-around-statements:
+    ShortStatementLines: 0
